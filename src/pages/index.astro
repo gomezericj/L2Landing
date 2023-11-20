@@ -1,0 +1,54 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeaderMain from '../components/HeaderMain.astro';
+import CuerpoMain from '../components/CuerpoMain.astro';
+---
+                
+<Layout title="Welcome to Astro.">
+	<HeaderMain />
+	<main class="snap-y snap-mandatory relative w-screen h-screen overflow-auto">
+		<div class="snap-center">
+			<CuerpoMain 
+				url="https://rgsuministros.com" 
+				color="black" 
+				title="RG SUMINISTROS SPA" 
+				subtitle="RG suministros, empresa líder en la distribución de insumos estéticos faciales en Chile, cuenta con la representación de las principales marcas del mundo como Stayve, Medisco, HubisLab, Dr.Pen, BioPen, dedicadas a tratamientos faciales profesionales que buscan el cuidado de la piel, siendo el aliado ideal para esteticistas, cosmetólogas, enfermeras, oodontólogos y afines. En el 2023 RG SUMINISTROS se convirtió en patrocinador oficial de la Asociación de cosmetólogos de Chile COSMECH, brindando apoyo a todos los profesionales del área cosmetológica."
+			>
+				<video slot="fondo" class="object-cover object-center h-screen w-screen" autoplay muted loop src="./final2.mp4">
+				</video>
+			</CuerpoMain>
+		</div>
+		<div class="snap-center">
+			<CuerpoMain 
+				url="https://rgsuministros.com/collections/stayve%C2%AE" 
+				ides="stayve" 
+				color="white" 
+				title="STAYVE®" 
+				subtitle="Stayve es la marca coreana de productos profesionales para el cuidado de la piel, reconocida, validada y respaldada por millones de profesionales a nivel mundial que dan testimonios de garantía, calidad y excelentes resultados al utilizar sus productos. La marca ha sido pionera en tratamientos como BBGLOW, PEELING DE ALGAS, OXIGENACIÓN FACIAL Y MICROBLANDING, cuyo enfoque principal se orienta a tratamientos poco invasivos con grandes resultados, permitiendo así posicionarse como la marca líder de su segmento a nivel mundial."
+			>
+				<img slot="fondo" class="object-cover object-center h-screen w-screen"  src="./8.jpg" alt="">
+			</CuerpoMain>
+		</div>
+		<div class="snap-center">
+			<CuerpoMain url="https://rgsuministros.com/collections/hubislab" 
+				ides="hubislab" 
+				color="black" 
+				title="HUBISLAB®" 
+				subtitle="HUBISLAB es una marca coreana de productos profesionales con líneas enfocadas a tratamientos específicos al cuidado de la piel, su principal fortaleza es el profundo estudio de la piel, basada en Human Bio Sciences cuyo objetivo escmantener una piel sana y hermosa durante toda la vida. HUBISLAB está diseñado para el tratamiento profesional de la piel en dermatología."
+			>
+				<img slot="fondo" class="object-cover object-center h-screen w-screen"  src="./BG-H.jpg" alt="">
+			</CuerpoMain>
+		</div>
+		<div class="snap-center">
+			<CuerpoMain url="https://rgsuministros.com/collections/equipos" 
+				ides="drpen" 
+				color="#172554" 
+				title="DR PEN®" 
+				subtitle="Dr. Pen es una marca conocida por sus dispositivos de microagujas, que se utilizan comúnmente en procedimientos de microneedling. Estos dispositivos están diseñados para estimular la producción de colágeno en la piel, lo que puede mejorar la textura de la piel, reducir las líneas finas y las arrugas, y abordar otros problemas dermatológicos."
+			>
+				<img slot="fondo" class="object-cover object-center h-screen w-screen"  src="./dr2.jpg" alt="">
+			</CuerpoMain>
+		</div>
+	</main>
+</Layout>
+

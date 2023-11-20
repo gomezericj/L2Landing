@@ -1,0 +1,23 @@
+---
+const { color, title, subtitle, ides, url } = Astro.props
+---
+
+<link rel="stylesheet" href="./src/css/cuerpo.css">
+
+<section id={ides} class="landing-section cuerpoSeccion" data-header-color={color}>
+    <div class="firstDivSection">
+        <header class="flex flex-grow flex-col">
+            <h2 class="firstH2Header" style={`color: ${color}`}> <span>{title}</span></h2>
+            <p class="firstPHeader" style={`color: ${color}`}> <span> {subtitle} </span></p>
+        </header>
+        <footer class="flex flex-col flex-grow justify-end pb-10">
+            <div>
+                    <a href={url} class="buttonWebCuerpo pageHover">Comprar Ya</a>
+                    <a href="https://wa.me/56988346587" class="buttonWebCuerpo wspHover">Whatsapp</a>
+            </div>
+        </footer>
+    </div>
+    <div class="lastDivSection" >
+        <slot name="fondo"/>
+    </div>
+</section>
